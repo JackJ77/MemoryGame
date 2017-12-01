@@ -1,0 +1,153 @@
+/*---------------------------------------------*/
+/*BASIC SETUP*/
+/*---------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*---------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom, #5cc6ff, #e0f9ff);
+    height: 100vh;
+}
+
+/*---------------------------------------------*/
+/*MEMORY SECTION*/
+/*---------------------------------------------*/
+
+/*BUTTONS*/
+
+.btn-container {
+    width: 150px;
+    text-align: center;
+    margin: 220px auto;
+}
+
+.btn {
+    display: block;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 110%;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.easy-btn {
+    background-image: linear-gradient(to bottom, #72ffb7, #00c32c);
+}
+
+.easy-btn:hover {
+    background-image: linear-gradient(to bottom, #0e912b, #72ffb7);
+}
+
+.medium-btn {
+    background-image: linear-gradient(to bottom, #f4ffce, #d0d812);
+}
+
+.medium-btn:hover {
+    background-image: linear-gradient(to bottom, #a1a712, #f4ffce);
+}
+
+.hard-btn {
+    background-image: linear-gradient(to bottom, #ff7474, #c90000);
+}
+
+.hard-btn:hover {
+    background-image: linear-gradient(to bottom, #9b0303, #ff7474);
+}
+
+.btn-new-game {
+    font-size: 50%;
+}
+
+.btn-new-game:hover {
+    background-image: linear-gradient(to bottom, #b5b5b5, #efefef);
+}
+
+/*OTHERS*/
+.timer {
+    margin: 5px auto;
+    text-align: center;
+    font-size: 400%;
+    color: #3180ff;
+}
+
+.memory-board {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px;
+}
+
+.card,
+.back-card {
+    width: 70px;
+    height: auto;
+    margin: 5px;
+}
+
+.back-card:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.game-over {
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: #141111;
+    opacity: 0.7;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #000;
+}
